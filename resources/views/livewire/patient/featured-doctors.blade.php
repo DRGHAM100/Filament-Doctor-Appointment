@@ -59,7 +59,7 @@
       class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg bg-blue-600 text-white hover:bg-blue-700">
       Book Appointment
       </a>
-    @else
+      @else
       <a href="/login"
       class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg bg-blue-600 text-white hover:bg-blue-700">
       Book Appointment

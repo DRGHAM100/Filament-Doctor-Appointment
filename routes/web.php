@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\Patient\Appointments\MyAppointments;
+use App\Livewire\Patient\Booking\BookingComponent;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
@@ -33,5 +35,8 @@ Route::middleware(['auth'])->group(function () {
         )
         ->name('two-factor.show');
 });
+
+Route::get('booking/page/{id}', BookingComponent::class);
+Route::get('my-appointments', MyAppointments::class)->name('appointments');
 
 require __DIR__.'/auth.php';
