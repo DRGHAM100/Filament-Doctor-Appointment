@@ -153,7 +153,7 @@ class BookingComponent extends Component
         // Send to Admin
         $appointmentData['recipient_name'] = 'Admin Admin';
         $appointmentData['recipient_role'] = 'admin';
-        // Mail::to('shadrack@mballahrise.com')->queue(new AppointmentCreated($appointmentData));
+        // Mail::to('drghamdakhol@gmail.com')->queue(new AppointmentCreated($appointmentData));
 
         // Send to Doctor
         $appointmentData['recipient_name'] = $appointmentData['doctor_name'];
