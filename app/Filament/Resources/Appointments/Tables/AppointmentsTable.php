@@ -15,11 +15,12 @@ class AppointmentsTable
     {
         return $table
             ->columns([
-                TextColumn::make('doctor_id')
-                    ->numeric()
+                TextColumn::make('doctor.user.name')
+                    ->label('Doctor Name')
+                    ->searchable()
                     ->sortable(),
-                TextColumn::make('patient_id')
-                    ->numeric()
+                TextColumn::make('patient.name')
+                    ->label('Patient Name')
                     ->sortable(),
                 TextColumn::make('appointment_date')
                     ->date()

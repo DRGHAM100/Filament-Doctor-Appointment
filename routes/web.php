@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Patient\Appointments\MyAppointments;
+use App\Livewire\Patient\Appointments\RescheduleForm;
 use App\Livewire\Patient\Booking\BookingComponent;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
@@ -38,5 +39,6 @@ Route::middleware(['auth'])->group(function () {
 
 Route::get('booking/page/{id}', BookingComponent::class);
 Route::get('my-appointments', MyAppointments::class)->name('appointments');
+Route::get('reschedule/{appointment_id}', RescheduleForm::class)->name('reschedule');
 
 require __DIR__.'/auth.php';
