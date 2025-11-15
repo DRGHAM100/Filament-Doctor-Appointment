@@ -15,7 +15,7 @@ use App\Mail\AppointmentCreated;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Filament\Notifications\Notification;
-use Filament\Notifications\Actions\Action;
+use Filament\Actions\Action;
 
 class BookingComponent extends Component
 {
