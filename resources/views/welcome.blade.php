@@ -45,7 +45,7 @@
     <div class="py-5 bg-gray-200">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                {{-- <livewire:patient.featured-articles/> --}}
+                <livewire:patient.featured-articles/>
             </div>
         </div>
     </div>

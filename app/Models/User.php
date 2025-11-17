@@ -93,4 +93,12 @@ class User extends Authenticatable
         return $this->hasOne(Patient::class);
     }
 
+    /**
+     * Get the articles associated with the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function articles(){
+        return $this->hasMany(Article::class,'author_id');
+    }
 }

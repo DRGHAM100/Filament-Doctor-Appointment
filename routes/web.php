@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\AllDoctors;
+use App\Livewire\ArticlePage;
 use App\Livewire\Patient\Appointments\MyAppointments;
 use App\Livewire\Patient\Appointments\RescheduleForm;
 use App\Livewire\Patient\Booking\BookingComponent;
@@ -41,5 +42,5 @@ Route::get('/all/doctors', AllDoctors::class)->name('doctors');
 Route::get('booking/page/{id}', BookingComponent::class);
 Route::get('my-appointments', MyAppointments::class)->name('appointments');
 Route::get('reschedule/{appointment_id}', RescheduleForm::class)->name('reschedule');
-
+Route::get('/article/{id}', ArticlePage::class)->name('article.page');
 require __DIR__.'/auth.php';
