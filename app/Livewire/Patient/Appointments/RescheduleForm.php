@@ -130,7 +130,7 @@ class RescheduleForm extends Component
         // Send to Admin
         $appointmentData['recipient_name'] = 'Admin Admin';
         $appointmentData['recipient_role'] = 'admin';
-        Mail::to('shadrack@mballahrise.com')->queue(new AppointmentUpdated($appointmentData));
+        Mail::to('drghamdakhol@gmail.com')->queue(new AppointmentUpdated($appointmentData));
 
         // queue to Doctor
         $appointmentData['recipient_name'] = $appointmentData['doctor_name'];
